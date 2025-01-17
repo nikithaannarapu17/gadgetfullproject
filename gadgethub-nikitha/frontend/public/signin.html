@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .auth-form {
+            background: linear-gradient(to right, #0277bd, #01579b);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .auth-form label, .auth-form input, .auth-form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+        }
+        .auth-form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .auth-form button {
+            background-color: #0b0c0b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: auto;
+            margin: 10px auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .auth-form button:hover {
+            background-color: #0277bd;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign In</h1>
+    </header>
+    <main>
+        <form class="auth-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 GADGETHUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
